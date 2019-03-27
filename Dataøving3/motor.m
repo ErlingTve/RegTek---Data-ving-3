@@ -4,9 +4,11 @@ K_p = 18.6;
 h_r = K_p;
 h_0 = h_u * h_r;
 
-margin(h_0);
-hold();
+[Gm, Pm, W_180, W_c] = margin(h_0);
 
 N = 1/(1+h_0);
-bode(N);
 
+bode(N);
+[mag, phase, wout] = bode(N, {650, 800});
+AbsN_max = max(mag);
+AbsN_maxInDB = mag2db(AbsN_max);
