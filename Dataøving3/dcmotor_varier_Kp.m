@@ -2,7 +2,7 @@
 % Brukes i data?ving 3, oppgave 1
 % Fyll inn 3 verdier for Kp her, og kj?r skriptet
 run mopar;
-Kp1 = 0;
+Kp1 = 18.6;
 Kp2 = 0.5*Kp1;
 Kp3 = 1.5*Kp1;
 

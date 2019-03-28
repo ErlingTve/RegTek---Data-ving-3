@@ -1,7 +1,7 @@
 s = tf('s');
 h_u = (K_T)/((J*L_a)*(s^3) + (J*R_a + B*L_a)*(s^2) + (R_a*B + K_T*K_v)*s);
-K_p = 18.6;
-h_r = K_p;
+Kp = 18.6;
+h_r = Kp;
 h_0 = h_u * h_r;
 
 [Gm, Pm, W_180, W_c] = margin(h_0);
